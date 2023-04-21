@@ -1,0 +1,383 @@
+/* Global Styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+    font-family: inherit;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 1rem;
+    width: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+/* Home Section Styles */
+#home {
+    position: relative;
+    background-image: url("jr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top 1px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(1, 1, 1);
+    opacity: 0.2;
+    z-index: 0; /* Push the white overlay to the back */
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: gold;
+    margin-bottom: 1rem;
+    z-index: 1; /* Bring the text to the front */
+}
+
+#home p {
+    font-size: 1.5rem;
+    color: rgba(255, 240, 153, 0.993);
+    z-index: 1; /* Bring the text to the front */
+}
+
+
+/* About Section Styles */
+#about {
+    background-color: #fff;
+
+    padding: 2rem;
+}
+
+#about h2 {
+    margin-bottom: 1rem;
+}
+
+#about p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Portfolio Section Styles */
+#portfolio {
+    background-color: #f2f2f2;
+    padding: 2rem;
+  }
+  
+  #portfolio h2 {
+    font-size: 2rem;
+    color: gold;
+    margin-bottom: 1rem;
+  }
+  
+  #portfolio ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #portfolio li {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative; /* add this line */
+  }
+  
+  #portfolio img {
+    width: 100%;
+    height: 100%; /* add this line */
+    object-fit: cover; /* add this line */
+    transition: all 0.3s ease;
+    position: absolute; /* add this line */
+    top: 0; /* add this line */
+    left: 0; /* add this line */
+  }
+  
+  
+  
+  #portfolio a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  #portfolio a:hover img {
+    transform: scale(1.1);
+  }
+  
+  #portfolio h3 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+    /* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    max-height: 700px;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Footer Styles */
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 1rem;
+}
+
+/* Common Styles */
+h1, h2, h3 {
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+p {
+margin-bottom: 1rem;
+}
+
+ul, ol {
+margin-bottom: 1rem;
+}
+
+li {
+margin-left: 1rem;
+margin-bottom: 0.5rem;
+}
+
+pre {
+background-color: #f5f5f5;
+padding: 1rem;
+overflow: auto;
+}
+
+code {
+background-color: #f5f5f5;
+padding: 0.2rem;
+font-size: 0.9rem;
+border-radius: 3px;
+font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+max-width: 100%;
+}
+
+/* HTML Cheatsheet Styles */
+#overview {
+background-color: #f5f5f5;
+padding: 2rem;
+}
+
+#elements {
+background-color: #fff;
+padding: 2rem;
+}
+
+#attributes {
+background-color: #f5f5f5;
+padding: 2rem;
+}
+
+
+/* New CSS for the added sections */
+#selectors {
+    background-color: #f5f5f5;
+    padding: 2rem;
+  }
+  
+  #box-model {
+    background-color: #f5f5f5;
+    padding: 2rem;
+  }
+  
+  #flexbox {
+    background-color: #f5f5f5;
+    padding: 2rem;
+  }
+  
+  #grid {
+    background-color: #f5f5f5;
+    padding: 2rem;
+  } 
+
+  /*JS CheatCheat Style*/
+  /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply box-sizing: border-box to all elements */
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  /* Set background color and font for the entire document */
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  nav ul li a:hover {
+    color: #f2f2f2;
+  }
+  
+  /* Style the sections */
+  section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  section ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  section pre {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-top: 10px;
+    overflow-x: auto;
+  }
+  
+  section pre code {
+    display: block;
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Style the code blocks */
+  code {
+    font-family: Consolas, monospace;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    padding: 2px;
+  }
+  
+  pre code {
+    padding: 0;
+  }
+  
+  

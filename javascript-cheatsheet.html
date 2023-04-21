@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Cheatsheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                               <li><a href="html-cheatsheet.html">HTML Cheatsheet</a></li>
+                <li><a href="css-cheatsheet.html">CSS Cheatsheet</a></li>
+                <li><a href="javascript-cheatsheet.html">JavaScript Cheatsheet</a></li>
+            </ul>
+         >
+        </nav>
+    </header>
+    <section id="introduction">
+        <h1>JavaScript Cheatsheet</h1>
+        <p>This is a cheatsheet for JavaScript, a popular programming language used for creating dynamic websites and web applications.</p>
+    </section>
+    
+    <section id="variables">
+        <h2>Variables</h2>
+        <p>A variable is a container for storing data values. In JavaScript, you can declare a variable using the <code>var</code>, <code>let</code>, or <code>const</code> keyword.</p>
+        <pre><code>var x = 5;
+            let y = "Hello";
+const z = true;</code></pre>
+</section>
+<section id="data-types">
+    <h2>Data Types</h2>
+    <p>JavaScript has several built-in data types, including:</p>
+    <ul>
+        <li>Numbers</li>
+        <li>Strings</li>
+        <li>Booleans</li>
+        <li>Arrays</li>
+        <li>Objects</li>
+        <li>Null</li>
+        <li>Undefined</li>
+    </ul>
+</section>
+
+<section id="operators">
+    <h2>Operators</h2>
+    <p>JavaScript has several operators for performing operations on values, including:</p>
+    <ul>
+        <li>Arithmetic Operators (+, -, *, /, %)</li>
+        <li>Assignment Operators (=, +=, -=, *=, /=, %=)</li>
+        <li>Comparison Operators (==, !=, ===, !==, <, >, <=, >=)</li>
+        <li>Logical Operators (&&, ||, !)</li>
+    </ul>
+</section>
+
+<section id="conditionals">
+    <h2>Conditionals</h2>
+    <p>Conditionals are used to execute code based on a condition. JavaScript has several conditional statements, including:</p>
+    <ul>
+        <li><code>if</code></li>
+        <li><code>else</code></li>
+        <li><code>else if</code></li>
+        <li><code>switch</code></li>
+    </ul>
+</section>
+
+<section id="loops">
+    <h2>Loops</h2>
+    <p>Loops are used to repeat code. JavaScript has several loop statements, including:</p>
+    <ul>
+        <li><code>for</code></li>
+        <li><code>while</code></li>
+        <li><code>do-while</code></li>
+        <li><code>forEach</li>
+            <section id="arrays">
+                <h2>Arrays</h2>
+                <p>An array is a collection of values that can be of any type.</p>
+                <p>Creating an array:</p>
+                <pre><code>let arr = [1, 2, 3];</code></pre>
+                <p>Accessing array elements:</p>
+                <pre><code>// Access the first element
+            console.log(arr[0]); // Output: 1
+            
+            // Access the last element
+            console.log(arr[arr.length - 1]); // Output: 3</code></pre>
+                <p>Iterating over an array:</p>
+                <pre><code>for (let i = 0; i < arr.length; i++) {
+              console.log(arr[i]);
+            }</code></pre>
+            </section>
+            
+            <section id="objects">
+                <h2>Objects</h2>
+                <p>An object is a collection of key-value pairs.</p>
+                <p>Creating an object:</p>
+                <pre><code>let person = {
+              name: 'John Doe',
+              age: 30,
+              email: 'john.doe@example.com'
+            };</code></pre>
+                <p>Accessing object properties:</p>
+                <pre><code>// Dot notation
+            console.log(person.name); // Output: John Doe
+            
+            // Bracket notation
+            console.log(person['age']); // Output: 30</code></pre>
+                <p>Iterating over an object:</p>
+                <pre><code>for (let key in person) {
+              console.log(key + ': ' + person[key]);
+            }</code></pre>
+            </section>
+            
+            <section id="functions">
+                <h2>Functions</h2>
+                <p>A function is a block of code that can be called to perform a specific task.</p>
+                <p>Creating a function:</p>
+                <pre><code>function add(a, b) {
+              return a + b;
+            }</code></pre>
+                <p>Calling a function:</p>
+                <pre><code>console.log(add(2, 3)); // Output: 5</code></pre>
+                <p>Function expressions:</p>
+                <pre><code>const multiply = function(a, b) {
+              return a * b;
+            };
+            
+            console.log(multiply(2, 3)); // Output: 6</code></pre>
+                <p>Arrow functions:</p>
+                <pre><code>const divide = (a, b) => a / b;
+            
+            console.log(divide(6, 3)); // Output: 2</code></pre>
+            </section>
+            
+            <footer>
+                <p>&copy; 2023 JavaScript Cheatsheet. All rights reserved.</p>
+            </footer>
+            <script src="script.js"></script>
+        </body>
+        </html>

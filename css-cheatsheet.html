@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Cheatsheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                               <li><a href="html-cheatsheet.html">HTML Cheatsheet</a></li>
+                <li><a href="css-cheatsheet.html">CSS Cheatsheet</a></li>
+                <li><a href="javascript-cheatsheet.html">JavaScript Cheatsheet</a></li>
+            </ul>
+         >
+        </nav>
+    </header>
+
+    <section id="selectors">
+        <h1>CSS Selectors</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>* {}</td>
+                    <td>Selects all elements</td>
+                </tr>
+                <tr>
+                    <td>#id {}</td>
+                    <td>Selects an element with a specific id</td>
+                </tr>
+                <tr>
+                    <td>.class {}</td>
+                    <td>Selects elements with a specific class</td>
+                </tr>
+                <tr>
+                    <td>element {}</td>
+                    <td>Selects all elements of a specific type</td>
+                </tr>
+                <tr>
+                    <td>element, element {}</td>
+                    <td>Selects all elements of the first type and all elements of the second type</td>
+                </tr>
+                <tr>
+                    <td>element.class {}</td>
+                    <td>Selects all elements of a specific type with a specific class</td>
+                </tr>
+                <tr>
+                    <td>element > element {}</td>
+                    <td>Selects all direct child elements of the first element that are of the second type</td>
+                </tr>
+                <tr>
+                    <td>element + element {}</td>
+                    <td>Selects the first element that is immediately after the second element</td>
+                </tr>
+                <tr>
+                    <td>element ~ element {}</td>
+                    <td>Selects all elements that are siblings of the second element and come after it</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="box-model">
+        <h1>CSS Box Model</h1>
+        <img src="box-model.png" alt="Box Model">
+        <ul>
+            <li>Content - The content of the box, where text and images appear</li>
+            <li>Padding - Clears an area around the content</li>
+            <li>Border - A border that goes around the padding and content</li>
+            <li>Margin - Clears an area outside the border</li>
+        </ul>
+    </section>
+
+    <section id="flexbox">
+        <h1>CSS Flexbox</h1>
+        <div class="container">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+        </div> 
+    </section>
+    
+        <section id="grid">
+            <h2>CSS Grid</h2>
+            <p>CSS Grid is a powerful layout system that allows you to create complex grids for your website.</p>
+            <h3>Creating a Grid Container</h3>
+            <p>To create a grid, you first need to define a grid container. This is done by setting the display property to grid or inline-grid on an element.</p>
+            <pre><code>
+          .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px;
+            grid-gap: 20px;
+          }
+          </code></pre>
+            <p>This creates a grid with 3 columns and 2 rows, with a 20px gap between each cell.</p>
+            
+            <h3>Creating Grid Items</h3>
+            <p>Once you have a grid container, you can start adding grid items to it. These are the elements that will be placed inside the grid cells.</p>
+            <pre><code>
+          .grid-item {
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+          }
+          </code></pre>
+            <p>This code sets the grid item to span from the second to the third column, and from the first to the third row.</p>
+            
+            <h3>Grid Properties</h3>
+            <p>There are many properties you can use to customize your CSS Grid, such as grid-template-columns, grid-template-rows, grid-template-areas, and more. For a full list of properties and their values, check out the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">Mozilla Developer Network</a>.</p>
+          </section>
+          <footer>
+            <p> 2023 CSS Cheatsheet. All rights reserved.</p>
+        </footer>
+          <script src="script.js"></script>
+        </body>
+        </html>          
